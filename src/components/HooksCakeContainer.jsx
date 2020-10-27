@@ -8,10 +8,12 @@ function HooksCakeContainer() {
     return (
         <div>
             <br/>
+            <div> ***Redux with Hoooks***</div>
              <h1>Number of cakes - {numberOfCakes}</h1>
             <br/>
             <button disabled={numberOfCakes <=0} onClick={()=> dispatch(buyCake())}> BuyCake</button>
             <button onClick={()=> dispatch(addCake())}> Add Cake</button>
+        <hr/>
         </div>
     )
 }

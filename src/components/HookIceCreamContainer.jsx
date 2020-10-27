@@ -8,6 +8,8 @@ function HookIceCreamContainer() {
     const dispatch = useDispatch()
     return (
         <div>
+            <br/>
+            <div> ***Redux with Hoooks***</div>
             <h1>{numberOfIceCreams}</h1>
             <button disabled={numberOfIceCreams <=0 } onClick={()=>dispatch(buyIceCream())}>Buy IceCream</button>
         </div>

@@ -6,9 +6,12 @@ function CakeContainer(props) {
      const { numberOfCakes, buyCake ,addCake } = props
     return (
         <div>
+          <br/>
+            <div> ***Redux without Hoooks***</div>
             <h1>Number of cakes - {numberOfCakes}</h1>
             <button disabled={ numberOfCakes <=0 } onClick={()=> buyCake()}>Buy Cake</button>
             <button onClick={()=> addCake()}>Add  Cake</button>
+            <hr/>
         </div>
     )
 }
